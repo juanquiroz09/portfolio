@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Portfolio</title>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+	<div class="brand">
+		<h2>J<span>Q</span></h2>
+	</div>
+	<div class="btn-menu">
+		<i class="fas fa-bars"></i>
+	</div>
+
+	<div class="wrapper" id="home">
+		<header>
+			<nav class="navbar show">
+				<ul class="menu">
+					<li><a class="active" href="#home">Home<a></li>
+					<li><a href="#aboutme">Aboutme<a></li>
+					<li><a href="#portfolio">Portfolio<a></li>
+					<li><a href="#contact">Contact<a></li>
+				</ul>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main">
+			<img src="./img/foto_juan.png" alt="foto_juan">
+			<div class="info-content">
+				<h1 class="animated bounceInDown">Soy<span> Juan</span> Quiroz</h1>
+				<p>A lo largo de mi carrera de Desarrollo de Software, me he convertido en una persona con metas claras,
+					cada día me levanto con ganas de aprender más sobre las tecnologías que manejo, con el objetivo de
+					ser un experto y profesional calificado. Esto hiso de mi una persona constante, perseverante y sin
+					miedos de enfrentarme a nuevos retos.</p>
+				<a href="cv.pdf" download="pdffile.pdf">
+					<button class="download-cv">Download CV</button>
+					<a />
+			</div>
+
+		</main>
+	</div>
+
+	<div class="about-title">
+		<h2 id="aboutme">About me <div class="divider"></div>
+		</h2>
+		<h3>Tecnologías que manejo</h3>
+		<div class="img-container">
+
+			<img id="css" src="./img/css.png" alt="css">
+			<img id="html" src="./img/html.png" alt="html">
+			<img id="js" src="./img/javascript.png" alt="javascript">
+			<img id="nodejs" src="./img/nodejs.png" alt="nodejs">
+			<img id="java" src="./img/java.png" alt="java">
+		</div>
+
+	</div>
+
+	<div class="about">
+		<div class="about-info">
+			<h1 class="skills">Habilidades</h1>
+			<p class="me">
+				1. Trabajo en equipo.
+				<br>
+				2. Comunicación asertiva.
+				<br>
+				3. Resolución de conflictos.
+				<br>
+				4. Adaptación al cambio.
+				<br>
+				5. Creatividad.
+			</p>
+		</div>
+
+		<img id="img-h" src="./img/picture.jpg" alt="coding">
+
+	</div>
+
+	<div class="portfolio" id="portfolio">
+		<div class="portfolio-headings">
+			<h2>My Portfolio</h2>
+			<div class="divider"></div>
+		</div>
+
+		<div class="container">
+
+			<div class="card">
+				<div class="card_img">
+				</div>
+
+				<div class="card_title">
+					<h2>Tech News</h2>
+				</div>
+
+				<div class="card_projects_links">
+					<a href="https://github.com/juanquiroz09/technews" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-globe-americas"></i>
+					</a>
+				</div>
+				<div class="projects_details_content" id="output">
+					<button class="project-details download-cv">
+						<a href="javascript:void(0)" onclick="displayWindow()">
+							Project Details
+						</a>
+					</button>
+					<!--Ventana flotante-->
+						<div id="window" class="window_css">
+							<p>Proyecto sitio web de noticias de Tecnología, utilizando HTML. CSS, JS, BOOTSRATP Y
+								MAS...</p>
+							<button class="btn-close">
+								<a href="javascript:void(0)" onclick="hideWindow()">
+									Cerrar
+								</a>
+							</button>
+						</div>
+						<!--Después de que aparece la ventana flotante, el fondo se vuelve más oscuro-->
+							<div id="shadow" class="shadow_css"></div>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card_img">
+				</div>
+
+				<div class="card_title">
+					<h2>CV</h2>
+				</div>
+
+				<div class="card_projects_links">
+					<a href="https://github.com/juanquiroz09/technews" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+					<a href="#">
+						<i class="fas fa-globe-americas"></i>
+					</a>
+				</div>
+				<div class="projects_details_content" id="output">
+					<button class="project-details download-cv">
+						<a href="javascript:void(0)" onclick="displayWindow2()">
+							Project Details
+						</a>
+					</button>
+					<!-- Ventana flotante-->
+						<div id="window2" class="window_css">
+							<p>Proyecto de elaboracion de una hoja de vida online, utilizando HTML, CSS, JS. Utilicé
+								Java en la parte del Back End y metodos Get y Post administrados por
+								Thunder Client</p>
+							<button class="btn-close">
+								<a href="javascript:void(0)" onclick="hideWindow2()">
+									Cerrar
+								</a>
+							</button>
+						</div>
+						<!-- Después de que aparece la ventana flotante, el fondo se vuelve más oscuro-->
+							<div id="shadow2" class="shadow_css"></div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="contact-section">
+			<div class="portfolio-headings">
+				<h2>Keep in touch</h2>
+				<div class="divider"></div>
+			</div>
+
+			<div class="container-contact" id="contact">
+				<img id="contact-foto" src="./img/foto_juan.png" alt="foto_juan">
+				<div class="contact-form">
+					<h4>Send a message...</h4>
+
+					<form class="form" method="POST">
+						<input type="text" placeholder="Name" id="name" required>
+						<input type="email" placeholder="Email" id="email" required>
+						<textarea type="text" placeholder="Place your message hear" id="message" required></textarea>
+						<button value="Send Email" onclick="sendEmail()" class="btn-submit">
+							Send Message
+						</button>
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<h2>Juan Quiroz</h2>
+			<h5>Software Developer</h5>
+		</div>
+
+		<div class="social-network">
+			<a href="https://www.linkedin.com/in/juan-quiroz-b11732229/" target="_blank">
+				<i class="fa-brands fa-linkedin"></i>
+			</a>
+		</div>
+	</footer>
+	<script src="main.js"></script>
+</body>
+
+</html>
