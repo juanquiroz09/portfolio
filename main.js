@@ -6,7 +6,7 @@ function sendEmail() {
 	Email.send({
 		Host: "smtp.google.com",
 		Username: "juan.quiroz1009@gmail.com",
-		Password: "60946560303F708E0B30BB0EEBE160D9181D",
+		Password: "C165E7677AC4B2E0817B5C218AE90EE5DCDC",
 		To: 'juan.quiroz1009@gmail.com',
 		From: document.getElementById("email").value,
 		Subject: "New Contact From Enquiry",
