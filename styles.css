@@ -515,7 +515,7 @@ body a {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
 	.brand {
 		position: absolute;
 		font-size: 1.5em;
@@ -699,6 +699,14 @@ body a {
 }
 
 @media (max-width: 500px) {
+	.navbar ul {
+		height: 25vh;
+		width: 40vw;
+	}
+
+	.navbar.show {
+		transform: translatex(-210px);
+	}
 
 	.main {
 		grid-template-columns: 1fr;
@@ -743,7 +751,11 @@ body a {
 	}
 }
 
-@media (max-width: 200px) {
+@media (max-width: 300px) {
+	.navbar ul {
+		height: 25vh;
+		width: 30vw;
+	}
 
 	.main {
 		grid-template-columns: 1fr;
