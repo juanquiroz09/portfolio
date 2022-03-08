@@ -50,3 +50,10 @@ function sendEmail() {
 			"<br> Message: " + document.getElementById("message").value
 	}).then(swal("Mensaje Enviado!", "Gracias por Contactarme!", "success"));
 }
+
+document.addEventListener('DOMContentLoaded', function(){
+    let formulario = document.getElementById('formul');
+    formulario.addEventListener('submit', function() {
+      formulario.reset();
+    });
+  });
