@@ -11,7 +11,7 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-     <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -184,7 +184,7 @@
 				<div class="contact-form">
 					<h4>Send a message...</h4>
 
-					<form class="form" method="POST">
+					<form class="form" method="POST" target="request">
 						<input type="text" placeholder="Name" id="name" required>
 						<input type="email" placeholder="Email" id="email" required>
 						<textarea type="text" placeholder="Place your message hear" id="message" required></textarea>
@@ -192,7 +192,8 @@
 							Send Message
 						</button>
 					</form>
-
+					<iframe id="request" style="position: absolute;width:0;height:0;border:0;"></iframe>
+					<div id="response"></div>
 				</div>
 
 			</div>
