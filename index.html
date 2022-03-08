@@ -184,16 +184,14 @@
 				<div class="contact-form">
 					<h4>Send a message...</h4>
 
-					<form class="form" method="POST" target="request">
+					<form class="form" method="POST">
 						<input type="text" placeholder="Name" id="name" required>
 						<input type="email" placeholder="Email" id="email" required>
 						<textarea type="text" placeholder="Place your message hear" id="message" required></textarea>
-						<button value="Send Email" onclick="sendEmail()" class="btn-submit">
+						<button type="submit" onclick="sendEmail()" class="btn-submit">
 							Send Message
 						</button>
 					</form>
-					<iframe id="request" style="position: absolute;width:0;height:0;border:0;"></iframe>
-					<div id="response"></div>
 				</div>
 
 			</div>
