@@ -50,6 +50,7 @@ body a {
 	z-index: 2;
 	font-size: 1.5rem;
 	color: #fff;
+	display: none;
 }
 
 .menu {
@@ -165,6 +166,7 @@ body a {
 	border-radius: 20px;
 	margin-top: 10px;
 	cursor: pointer;
+	font-weight: 600;
 }
 
 .download-cv:hover {
@@ -369,12 +371,6 @@ body a {
 	text-transform: uppercase;
 }
 
-.card .project-details a {
-	text-decoration: none;
-	color: #49515A;
-	font-weight: 800;
-}
-
 .shadow_css {
 	display: none;
 	position: fixed;
@@ -530,6 +526,7 @@ body a {
 		z-index: 8;
 		font-size: 1.5rem;
 		color: #fff;
+		display: block;
 	}
 
 	.navbar ul {
