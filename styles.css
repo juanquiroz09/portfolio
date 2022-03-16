@@ -371,51 +371,83 @@ body a {
 	text-transform: uppercase;
 }
 
-.shadow_css {
-	display: none;
+.modal {
 	position: fixed;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-	background-color: #717C89;
-	z-index: 10;
-	-moz-opacity: 0.6;
-	opacity: .60;
-	filter: alpha(opacity=66);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	display: none;
+	animation: modal-open .5s;
 }
 
-.window_css {
-	display: none;
-	position: fixed;
-	top: 20%;
-	left: 20%;
-	width: 60%;
-	height: 60%;
-	border: 3px solid honeydew;
-	background-color: #E8EDEE;
-	z-index: 11;
+.modal-content {
+	background: #717C89;
+	margin-top: 100px;
+	width: 15vw;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 8px 24px;
+	border-radius: 4px;
+	z-index: 4;
+}
+
+.modal-header {
+	color: black;
+	font-weight: 400;
+	padding: 10px 0;
+	font-size: 25px;
+}
+
+.modal-header .modal-close {
+	float: right;
+	font-size: 20px;
+	background: #efefef;
+	border: 0;
+	outline: 0;
+	padding: 5px 8px;
+	border-radius: 50%;
 	color: black;
 }
 
-.btn-close {
-	padding: 5px 10px;
-	background-color: #A1E5AB;
-	color: #49515A;
-	border: none;
-	border-radius: 20px;
-	position: Button-Shadow;
-	cursor: pointer;
-	text-decoration: none;
-	margin: 5px;
-	margin-left: 50px;
+.modal-body {
+	color: #fff;
+	padding: 15px 0;
+	font-size: 15px;
 }
 
-.btn-close:hover {
+.modal-footer {
+	padding: 15px 0;
+}
+
+.modal-footer .modal-close {
+	margin-top: -25px;
+	padding: 8px 16px;
+	font-size: 14px;
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	background-color: #A1E5AB;
+	color: #49515A;
+	cursor: pointer;
+}
+
+.modal-close:hover {
 	background-color: #fff;
 	color: #49515A;
 }
 
+@keyframes modal-open {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
 
 .projects_details_content {
 	display: flex;
@@ -735,6 +767,18 @@ body a {
 		max-height: 100vh;
 		width: 440px;
 		height: 300px;
+	}
+
+	.modal .modal-content {
+		width: 50vw;
+		height: 20vh;
+		font-size: 15px;
+	}
+
+	.modal-body {
+		width: 50vw;
+		font-size: 10px;
+		margin-left: -20px;
 	}
 
 	.container {

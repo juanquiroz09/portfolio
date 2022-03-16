@@ -11,6 +11,7 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
 </head>
 
@@ -99,7 +100,7 @@
 				</div>
 
 				<div class="card_title">
-					<h2>Tech News</h2>
+					<h2>Technews</h2>
 				</div>
 
 				<div class="card_projects_links">
@@ -111,19 +112,20 @@
 					</a>
 				</div>
 				<div class="projects_details_content" id="output">
-					<button class="project-details download-cv" href="javascript:void(0)" onclick="displayWindow()">
+					<button class="project-details download-cv modal-open" data-modal="modal1">
 						Project Details
 					</button>
-					<!--Ventana flotante-->
-					<div id="window" class="window_css">
-						<p>Proyecto sitio web de noticias de Tecnología, utilizando HTML. CSS, JS, BOOTSRATP Y
-							MAS...</p>
-						<button class="btn-close" href="javascript:void(0)" onclick="hideWindow()">
-								Cerrar
-						</button>
-					</div>
-					<!--Después de que aparece la ventana flotante, el fondo se vuelve más oscuro-->
-					<div id="shadow" class="shadow_css"></div>
+					<div class="modal" id="modal1">
+						<div class="modal-content">
+							<div class="modal-header>">Technews
+							</div>
+							<div class="modal-body">
+								Sitio web de noticias interesantes de tecnología, elaborado con HTML, CSS, BOOTSTRAP, JS y más.
+							</div>
+							<div class="modal-footer"><button class="link modal-close">Close</button></div>
+						</div>
+				   </div>
+
 				</div>
 			</div>
 
@@ -133,7 +135,7 @@
 				</div>
 
 				<div class="card_title">
-					<h2>CV</h2>
+					<h2>React Gallery</h2>
 				</div>
 
 				<div class="card_projects_links">
@@ -145,20 +147,20 @@
 					</a>
 				</div>
 				<div class="projects_details_content" id="output">
-					<button class="project-details download-cv" href="javascript:void(0)" onclick="displayWindow2()">
+					<button class="project-details download-cv modal-open" data-modal="modal2">
 						Project Details
 					</button>
-					<!-- Ventana flotante-->
-					<div id="window2" class="window_css">
-						<p>Proyecto de elaboracion de una hoja de vida online, utilizando HTML, CSS, JS. Utilicé
-							Java en la parte del Back End y metodos Get y Post administrados por
-							Thunder Client</p>
-						<button class="btn-close" href="javascript:void(0)" onclick="hideWindow2()">
-								Cerrar
-						</button>
-					</div>
-					<!-- Después de que aparece la ventana flotante, el fondo se vuelve más oscuro-->
-					<div id="shadow2" class="shadow_css"></div>
+					<div class="modal" id="modal2">
+						<div class="modal-content">
+							<div class="modal-header>">React Galery
+							</div>
+							<div class="modal-body">
+								Galería de Imágenes, elaborado con MERN STACK y Digital Oceans Spaces.
+							</div>
+							<div class="modal-footer"><button class="link modal-close">Close</button></div>
+						</div>
+				   </div>
+
 				</div>
 			</div>
 
