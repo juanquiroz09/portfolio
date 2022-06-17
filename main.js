@@ -31,21 +31,6 @@ window.onclick = function(e) {
 	}
 };
 
-//Functions Contact Form
-function sendEmail() {
-	Email.send({
-		Host: "smtp.google.com",
-		Username: "juan.quiroz1009@gmail.com",
-		Password: "C165E7677AC4B2E0817B5C218AE90EE5DCDC",
-		To: 'juan.quiroz1009@gmail.com',
-		From: document.getElementById("email").value,
-		Subject: "New Contact From Enquiry",
-		Body: "Name: " + document.getElementById("name").value +
-			"<br> Email: " + document.getElementById("email").value +
-			"<br> Message: " + document.getElementById("message").value
-	}).then(swal("Mensaje Enviado!", "Gracias por Contactarme!", "success"));
-}
-
 document.addEventListener('DOMContentLoaded', function(){
     let formulario = document.getElementById('formul');
     formulario.addEventListener('submit', function() {
