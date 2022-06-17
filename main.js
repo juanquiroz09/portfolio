@@ -31,6 +31,24 @@ window.onclick = function(e) {
 	}
 };
 
+document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  let myForm = document.getElementById("pizzaOrder");
+  let formData = new FormData(myForm);
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(swal("Mensaje Enviado!", "Gracias por Contactarme!", "success"))
+    .catch((error) => alert(error));
+};
+
+
 document.addEventListener('DOMContentLoaded', function(){
     let formulario = document.getElementById('formul');
     formulario.addEventListener('submit', function() {
