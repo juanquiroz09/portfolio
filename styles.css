@@ -542,7 +542,7 @@ body a {
 	margin-top: 1em;
 }
 
-
+/*Resolución de pantalla android 700px*/
 @media (max-width: 700px) {
 	.brand {
 		position: absolute;
@@ -626,18 +626,17 @@ body a {
 		white-space: nowrap;
 	}
 
-	#img-h {
-		margin-left: -1em;
-		width: 47.6vw;
-		height: 47vh;
-
-	}
-
 	.about-title h3 {
 		font-size: 17px;
 		margin-top: 2em;
 		margin-left: 18em;
 	}
+
+#img-h{
+  margin: 0px auto;
+	width: 47.6vw;
+	height: 47vh;
+}
 
 	.img-container {
 		color: #fff;
@@ -688,15 +687,15 @@ body a {
 	}
 
 	.portfolio .container {
-		width: 100vw;
-		height: 100vh;
+		width: 80vw;
+		height: 120vh;
 		display: flex;
 		align-items: center;
 	}
 
 	.card {
-		width: 200px;
-		height: 250px;
+		width: 240px;
+		height: 280px;
 		background-color: #40494F;
 		color: #fff;
 		margin: 2em;
@@ -704,7 +703,7 @@ body a {
 
 	.card_img {
 		width: 100%;
-		height: 75px;
+		height: 100px;
 		background-size: cover;
 	}
 
@@ -722,7 +721,8 @@ body a {
 	}
 
 	#contact-foto {
-		width: 50%;
+		width: 200%;
+		margin-left: -2em;
 	}
 
 }
