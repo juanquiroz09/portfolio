@@ -200,7 +200,7 @@ body a {
 .img-container {
 	color: #fff;
 	display: flex;
-	margin-left: 600px;
+	margin-left: 700px;
 	margin-top: 10px;
 }
 
@@ -695,7 +695,7 @@ body a {
 
 	.card {
 		width: 240px;
-		height: 290px;
+		height: 300px;
 		background-color: #40494F;
 		color: #fff;
 		margin: 2em;
