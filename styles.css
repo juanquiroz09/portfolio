@@ -311,7 +311,8 @@ body a {
 }
 
 .portfolio .container {
-	width: 60vw;
+	display: flex;
+	width: 70vw;
 	height: 60vh;
 	margin: 0 auto;
 	display: flex;
